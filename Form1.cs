@@ -174,9 +174,9 @@ namespace dovizKuru
         private void button3_Click(object sender, EventArgs e)
         {
             kurList = new List<kur>();
-            if (conn.State == ConnectionState.Closed) conn.Open();
-            sda = new SqlDataAdapter(cmd);
-            dt = new DataSet();
+            //if (conn.State == ConnectionState.Closed) conn.Open();
+            //sda = new SqlDataAdapter(cmd);
+            //dt = new DataSet();
 
 
             string exchangeRate = "http://www.tcmb.gov.tr/kurlar/today.xml";
@@ -188,14 +188,21 @@ namespace dovizKuru
             XmlNodeList secilen = xmlDoc.DocumentElement.SelectNodes("Currency");
             foreach (XmlNode ekle in secilen)
             {
-               
-                string Kod = xmlDoc.SelectSingleNode("Tarih_Date/Currency[@Kod='USD']").InnerXml;
-                string Unit = xmlDoc.SelectSingleNode("Tarih_Date/Currency[@Kod='USD']/Unit").InnerXml;
-                string Currency_Name = xmlDoc.SelectSingleNode("Tarih_Date/Currency[@Kod='USD']/CurrencyName").InnerXml;
-                string ForexBuying = xmlDoc.SelectSingleNode("Tarih_Date/Currency[@Kod='USD']/ForexBuying").InnerXml;
-                string ForexSelling = xmlDoc.SelectSingleNode("Tarih_Date/Currency[@Kod='USD']/ForexSelling").InnerXml;
-                string BanknoteBuying = xmlDoc.SelectSingleNode("Tarih_Date/Currency[@Kod='USD']/BanknoteBuying").InnerXml;
-                string BanknoteSelling = xmlDoc.SelectSingleNode("Tarih_Date/Currency[@Kod='USD']/BanknoteSelling").InnerXml;
+                //string Kod = xmlDoc.SelectSingleNode("Tarih_Date/Currency[@Kod='USD']").InnerXml;
+                //string Unit = xmlDoc.SelectSingleNode("Tarih_Date/Currency[@Kod='USD']/Unit").InnerXml;
+                //string Currency_Name = xmlDoc.SelectSingleNode("Tarih_Date/Currency[@Kod='USD']/CurrencyName").InnerXml;
+                //string ForexBuying = xmlDoc.SelectSingleNode("Tarih_Date/Currency[@Kod='USD']/ForexBuying").InnerXml;
+                //string ForexSelling = xmlDoc.SelectSingleNode("Tarih_Date/Currency[@Kod='USD']/ForexSelling").InnerXml;
+                //string BanknoteBuying = xmlDoc.SelectSingleNode("Tarih_Date/Currency[@Kod='USD']/BanknoteBuying").InnerXml;
+                //string BanknoteSelling = xmlDoc.SelectSingleNode("Tarih_Date/Currency[@Kod='USD']/BanknoteSelling").InnerXml;
+
+                string Kod = ekle.Attributes["Kod"].Value;
+                string Unit = ekle.SelectSingleNode("Unit").InnerText;
+                string Currency_Name = ekle.SelectSingleNode("CurrencyName").InnerText;
+                string ForexBuying = ekle.SelectSingleNode("ForexBuying").InnerText;
+                string ForexSelling = ekle.SelectSingleNode("ForexSelling").InnerText;
+                string BanknoteBuying = ekle.SelectSingleNode("BanknoteBuying").InnerText;
+                string BanknoteSelling = ekle.SelectSingleNode("BanknoteSelling").InnerText;
                 kurList.Add(new kur
                 {
                     Kod = Kod,
@@ -205,22 +212,14 @@ namespace dovizKuru
                     ForexSelling = ForexSelling,
                     BanknoteBuying = BanknoteBuying,
                     BanknoteSelling = BanknoteSelling,
-
                 });
-
-
-
-
             }
-
 
             string USD_Alis = xmlDoc.SelectSingleNode("Tarih_Date/Currency[@Kod='USD']/BanknoteBuying").InnerXml;
             string USD_Satis = xmlDoc.SelectSingleNode("Tarih_Date/Currency[@Kod='USD']/BanknoteSelling").InnerXml;
 
             string EURO_Alis = xmlDoc.SelectSingleNode("Tarih_Date/Currency[@Kod='EUR']/BanknoteBuying").InnerXml;
             string EURO_Satis = xmlDoc.SelectSingleNode("Tarih_Date/Currency[@Kod='EUR']/BanknoteSelling").InnerXml;
-
-
         }
     }
 }
