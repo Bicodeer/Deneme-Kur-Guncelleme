@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace dovizKuru.Properties
+namespace DövizKurGüncelleme.Properties
 {
 
 

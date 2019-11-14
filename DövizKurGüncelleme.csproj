@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9AE8F676-4A5F-4D28-9D3E-3FB2DB1828FA}</ProjectGuid>
+    <ProjectGuid>{3FEB0B53-38C5-415A-AB0F-E17C03F7DEDB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>dovizKuru</RootNamespace>
-    <AssemblyName>dovizKuru</AssemblyName>
+    <RootNamespace>DövizKurGüncelleme</RootNamespace>
+    <AssemblyName>DövizKurGüncelleme</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -79,9 +79,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

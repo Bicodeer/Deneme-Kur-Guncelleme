@@ -1,9 +1,0 @@
-C:\Users\lenovo\source\repos\dovizKuru\bin\Debug\dovizKuru.exe.config
-C:\Users\lenovo\source\repos\dovizKuru\bin\Debug\dovizKuru.exe
-C:\Users\lenovo\source\repos\dovizKuru\bin\Debug\dovizKuru.pdb
-C:\Users\lenovo\source\repos\dovizKuru\obj\Debug\dovizKuru.csprojAssemblyReference.cache
-C:\Users\lenovo\source\repos\dovizKuru\obj\Debug\dovizKuru.Form1.resources
-C:\Users\lenovo\source\repos\dovizKuru\obj\Debug\dovizKuru.Properties.Resources.resources
-C:\Users\lenovo\source\repos\dovizKuru\obj\Debug\dovizKuru.csproj.GenerateResource.cache
-C:\Users\lenovo\source\repos\dovizKuru\obj\Debug\dovizKuru.exe
-C:\Users\lenovo\source\repos\dovizKuru\obj\Debug\dovizKuru.pdb

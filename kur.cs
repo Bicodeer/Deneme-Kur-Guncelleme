@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace dovizKuru
+namespace DövizKurGüncelleme
 {
     public class kur
     {
@@ -16,6 +16,6 @@ namespace dovizKuru
         public string ForexSelling { get; set; }
         public string BanknoteBuying { get; set; }
         public string BanknoteSelling { get; set; }
-
+        public string Date { get; set; }
     }
 }

@@ -1,0 +1,9 @@
+C:\Users\lenovo\Desktop\PROJE\DövizKurGüncelleme\bin\Debug\DövizKurGüncelleme.exe.config
+C:\Users\lenovo\Desktop\PROJE\DövizKurGüncelleme\bin\Debug\DövizKurGüncelleme.exe
+C:\Users\lenovo\Desktop\PROJE\DövizKurGüncelleme\bin\Debug\DövizKurGüncelleme.pdb
+C:\Users\lenovo\Desktop\PROJE\DövizKurGüncelleme\obj\Debug\DövizKurGüncelleme.csprojAssemblyReference.cache
+C:\Users\lenovo\Desktop\PROJE\DövizKurGüncelleme\obj\Debug\DövizKurGüncelleme.Form1.resources
+C:\Users\lenovo\Desktop\PROJE\DövizKurGüncelleme\obj\Debug\DövizKurGüncelleme.Properties.Resources.resources
+C:\Users\lenovo\Desktop\PROJE\DövizKurGüncelleme\obj\Debug\DövizKurGüncelleme.csproj.GenerateResource.cache
+C:\Users\lenovo\Desktop\PROJE\DövizKurGüncelleme\obj\Debug\DövizKurGüncelleme.exe
+C:\Users\lenovo\Desktop\PROJE\DövizKurGüncelleme\obj\Debug\DövizKurGüncelleme.pdb
